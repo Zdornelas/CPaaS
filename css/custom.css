@@ -1,0 +1,246 @@
+/* === Fonts === */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+/* === GERAIS === */
+body,
+html {
+  font-family: var(--body-font-family);
+  color: var(--bs-black);
+  background-image: url(/img/bg.svg);
+}
+
+/* === INTRODUÇÃO === */
+
+/* Ajuste no posicionamento do container */
+#main .container-fluid {
+  padding-right: calc(var(--bs-gutter-x) * 1.5);
+  padding-left: calc(var(--bs-gutter-x) * 1.5);
+}
+
+#main h6 {
+  font-weight: var(--font-extralight);
+  margin-bottom: 100px;
+}
+
+#main p {
+  font-size: 1rem;
+  font-weight: var(--font-extralight);
+}
+
+/* === SERVIÇOS === */
+#services {
+  width: 100%;
+  background-image: linear-gradient(#3db3e5, #388efc);
+}
+
+#services img {
+  max-height: 5rem;
+}
+
+#services a.service {
+  display: block;
+  min-height: 215px;
+  background: var(--main-white);
+  border-radius: 20px;
+  text-align: center;
+  padding: 10px 20px;
+  color: var(--main-black);
+  text-decoration: none;
+  transition: all ease-out 0.2s;
+}
+
+#services a.service:hover {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  transform: scale(1.05);
+}
+
+#services h6 {
+  color: var(--main-black);
+  font-weight: var(--font-semibold);
+  max-height: 48px;
+}
+
+#services p {
+  color: var(--grey-medium);
+  font-size: 0.7rem;
+}
+
+/* === PARCEIROS === */
+#parceiros .container {
+  padding: 0;
+}
+
+#parceiros a.link-parceiros {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  transition: all ease-out 0.2s;
+}
+
+#parceiros a.link-parceiros:hover {
+  transform: scale(1.05);
+  color: var(--main-white);
+  opacity: 1;
+}
+
+#parceiros a.link-parceiros img {
+  color: var(--grey-normal);
+  max-height: 30px;
+  width: 100%;
+  opacity: 0.5;
+}
+
+#parceiros a.link-parceiros:hover img {
+  color: var(--main-white);
+  opacity: 1;
+}
+
+/* === MAIS INFORMAÇÕES === */
+#info .title::after {
+  width: 25%;
+  position: absolute;
+  padding-top: 3rem;
+  left: 7%;
+}
+
+#info span {
+  font-size: 1.5rem;
+}
+
+#info p {
+  color: var(--main-black);
+}
+
+/* === EXAMPLES === */
+#examples {
+  width: 100%;
+  background: linear-gradient(#3db3e5, #388efc);
+  background-size: cover;
+}
+
+#exemples .container {
+  padding-bottom: 0;
+}
+
+#examples .row {
+  background: var(--main-white);
+  background-size: contain;
+  border-radius: 5px;
+}
+
+#examples p {
+  font-size: 0.7rem;
+  min-height: 67.188px;
+}
+
+#examples img {
+  max-height: 5rem;
+}
+
+#examples .line {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/* === VANTAGENS === */
+#vantages {
+  text-align: center;
+  justify-content: center;
+}
+
+#vantages .vantage-box {
+  margin-bottom: 50px;
+}
+
+#vantages img {
+  max-height: 4rem;
+}
+
+#vantages p {
+  font-size: 1rem;
+}
+
+.vantage-box img,
+.vantage-box h4 {
+  transition: 0.2s;
+}
+
+.vantage-box:hover > img,
+.vantage-box:hover > h4 {
+  color: var(--blue-main);
+}
+
+/* === NEWS LETTER === */
+#news {
+  text-align: center;
+  background: #3db3e5;
+}
+
+#news p {
+  font-size: 1.15rem;
+  color: var(--main-white);
+}
+
+#email-input {
+  border-radius: 0;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border: 2px solid #65daf9;
+  display: inline;
+  box-sizing: border-box;
+  width: 40%;
+  height: 2.5rem;
+}
+
+#news-btn {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border: 2px solid #65daf9;
+  background-color: #65daf9;
+  text-transform: uppercase;
+  color: var(--main-white);
+  height: 2.5rem;
+  padding: 0 1.8rem;
+  margin-left: -150px;
+  position: absolute;
+  transition: 0.5s;
+}
+
+#news-btn:hover {
+  background-color: var(--main-white);
+  color: #65daf9;
+}
+
+/* === COMPANY === */
+#company .container {
+  padding-bottom: 0;
+  text-align: center;
+}
+
+#company .content-box {
+  border-bottom: 1px solid var(--blue-main);
+  padding-bottom: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+#company .content-box p {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+#company .content-box i {
+  color: var(--blue-main);
+  border: 1px solid var(--blue-main);
+  border-radius: 50%;
+  width: 3.5rem;
+  height: 3.5rem;
+  line-height: 3.5rem;
+  font-size: 2rem;
+  margin-bottom: 1.25rem;
+}
+
+#company h5 {
+  color: var(--main-black);
+  font-weight: var(--font-semibold);
+}

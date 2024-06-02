@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/register.css">
+  <title>Registro CPaaS</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="form-image">
+      <img src="../img/insert-block-bro.svg">
+    </div>
+    <div class="form">
+
+      <!-- Cadastre form -->
+      <form action="#" method="post">
+        <div class="form-header">
+          <div class="title">
+
+            <!-- Título cadastre -->
+            <h1>Cadastre-se</h1>
+          </div>
+
+          <!-- Possui conta? botao -->
+          <div class="login-button">
+            <p class="already">Já tem conta?</p><a href="../html/login.html">Entrar</a>
+          </div>
+        </div>
+
+        <div class="input-group">
+
+          <!--area nome-->
+          <div class="input-box">
+
+            <label for="Nome">Nome</label>
+            <input type="text" id="name" name="name" placeholder="Insira seu nome completo" minlength="15" maxlength="60">
+
+            <small>Error message</small>
+
+          </div>
+
+          <!--area nome materno-->
+          <div class="input-box">
+            <label for="Nome Materno">Nome Materno</label>
+            <input type="text" id="nome-materno" name="nome-materno" placeholder="Insira seu nome materno">
+
+            <small>Error message</small>
+
+          </div>
+
+          <!--area cpf-->
+          <div class="input-box">
+            <label for="CPF">CPF</label>
+            <input type="text" id="cpf" name="cpf" placeholder="Insira seu CPF" maxlength="11" pattern="[0-9]{11}" onblur="formataCPF(this)">
+
+            <small>Error message</small>
+          </div>
+
+          <!--area celular-->
+          <div class="input-box">
+            <label for="Telefone Celular">Telefone Celular</label>
+            <input type="text" id="tel-celular" name="tel-celular" placeholder="Insira seu celular" maxlength="13" pattern="[0-9]{13}" onblur="formataphone(this)">
+
+            <small>Error message</small>
+
+          </div>
+
+          <!--area telefone fixo-->
+          <div class="input-box">
+            <label for="Telefone Fixo">Telefone Fixo</label>
+            <input type="text" id="tel-fixo" name="tel-fixo" placeholder="Insira seu telefone fixo" maxlength="12" pattern="[0-9]{12}" onblur="formatatelephone(this)">
+
+            <small>Error message</small>
+
+          </div>
+
+          <!--area endereço-->
+          <div class="input-box">
+            <label for="Endereço">Endereço</label>
+            <input type="text" id="endereco" name="endereço" placeholder="Insira seu endereço" oninvalid="this.setCustomValidity('Preencha com seu endereço completo')" oninput='this.setCustomValidity("")'>
+
+            <small>Error message</small>
+
+          </div>
+
+          <!--area login-->
+          <div class="input-box">
+            <label for="login">Login</label>
+            <input type="login" id="login" name="login" placeholder="Crie seu login">
+
+            <small>Error message</small>
+
+          </div>
+
+
+          <!--area sexo-->
+          <div class="select-box">
+            <label for="sexo">Sexo</label>
+            <select name="sexo" id="sexo">
+              <option value="masculino">Masculino</option>
+              <option value="feminino">Feminino</option>
+              <option value="outro">Outro</option>
+            </select>
+
+            <small>Error message</small>
+
+          </div>
+
+          <!--area senha-->
+          <div class="input-box">
+            <label for="senha">Senha</label>
+            <input type="password" id="password" name="password" placeholder="Crie sua senha" oninvalid="this.setCustomValidity('Preencha com a senha')" oninput='this.setCustomValidity("")'>
+
+            <small>Error message</small>
+
+          </div>
+
+          <!--area confirmar senha-->
+          <div class="input-box">
+            <label for="senha">Confirme a senha</label>
+            <input type="password" id="passwordtwo" name="passwordtwo" placeholder="Confirme sua senha" oninvalid="this.setCustomValidity('Preencha com a senha')" oninput='this.setCustomValidity("")'>
+
+            <small>Error message</small>
+
+          </div>
+        </div>
+
+        <!--area criar conta-->
+        <div class="submit-button">
+          <button type="submit">Criar</button>
+        </div>
+      </form>
+
+      <!--Fim do form-->
+    </div>
+  </div>
+
+
+  <script src="../js/validation.js"></script>
+</body>
+
+</html>

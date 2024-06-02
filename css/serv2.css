@@ -1,0 +1,84 @@
+/* === Fonts === */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+/* === GERAIS === */
+body,
+html {
+  background-image: var(--main-white);
+  font-family: var(--body-font-family);
+  color: var(--bs-black);
+}
+
+/* === INTRO === */
+#num-mascara .container-fluid {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+#num-mascara h1 {
+  font-size: 4rem;
+  margin-bottom: 1.25rem;
+}
+
+#num-mascara h3 {
+  color: var(--grey-normal);
+}
+
+#num-mascara .title::after {
+  width: 25%;
+  position: absolute;
+  padding-top: 5rem;
+  left: 36%;
+}
+
+#num-mascara li {
+  margin-bottom: 0.80rem;
+}
+
+/* === Como Funciona === */
+#como-funciona {
+  background: #fafafa;
+}
+
+#como-funciona .title::after {
+  width: 16%;
+  position: absolute;
+  padding-top: 3rem;
+  left: 42%;
+}
+
+#como-funciona .container {
+  padding-bottom: 2rem;
+}
+
+#como-funciona h5 {
+  margin-bottom: 1.5rem;
+}
+
+#como-funciona span {
+  font-size: 1.20rem;
+}
+
+/* === Quem Usa === */
+#quem-usa .container {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+/* === Home - Office === */
+#homeoffice {
+  background: #fafafa;
+}
+
+#homeoffice .title::after {
+  width: 20%;
+  position: absolute;
+  padding-top: 3rem;
+  left: 40%;
+}
+
+/* === Recursos === */
+#recursos .col {
+  border-bottom: 1px solid var(--blue-main);
+  padding-bottom: 2.5rem;
+}

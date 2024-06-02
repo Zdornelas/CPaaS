@@ -1,0 +1,23 @@
+/* === BootStrap CSS === */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css");
+
+/* === Variáveis Library === */
+@import url(./config.css);
+
+/* === Global Library === */
+@import url(./global.css);
+
+/* === Custom Class === */
+@import url(./custom.css);
+
+/* === 2FA Library === */
+@import url(serv1.css);
+
+@import url(serv2.css);
+
+@import url(serv3.css);
+
+@import url(serv4.css);
+
+/* === Responsive Library === */
+@import url(./responsive.css);

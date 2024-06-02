@@ -1,0 +1,77 @@
+/* === Fonts === */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+/* === GERAIS === */
+body,
+html {
+  background-image: var(--main-white);
+  font-family: var(--body-font-family);
+  color: var(--bs-black);
+}
+
+/* === INTRO === */
+#sms-programavel .container-fluid {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+#sms-programavel h1 {
+  font-size: 4rem;
+  margin-bottom: 1.25rem;
+}
+
+#sms-programavel h3 {
+  color: var(--grey-normal);
+}
+
+#sms-programavel .title::after {
+  width: 30%;
+  position: absolute;
+  padding-top: 5rem;
+  left: 35%;
+}
+
+#sms-programavel li {
+  margin-bottom: 1.25rem;
+}
+
+/* === Info === */
+#area-meio {
+  background: #fafafa;
+}
+
+#area-meio .container {
+  padding-bottom: 2rem;
+}
+
+#area-meio h5 {
+  margin-bottom: 1.5rem;
+}
+
+#area-meio span {
+  font-size: 2.5rem;
+}
+
+/* === HOW WORKS === */
+#work .container {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+/* === BENEFÍCIOS === */
+#beneficios {
+  background: #fafafa;
+}
+
+#beneficios .title::after {
+  width: 10%;
+  position: absolute;
+  padding-top: 3rem;
+  left: 45%;
+}
+
+/* === QUEM USA === */
+#beneficios .col {
+  border-bottom: 1px solid var(--blue-main);
+  padding-bottom: 2.5rem;
+}
